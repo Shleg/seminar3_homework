@@ -40,14 +40,7 @@ bool CheckFiveDigit(string text)
 bool CheckNum(string text)
 {
     int result;
-    if (int.TryParse(text, out result))
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return (int.TryParse(text, out result));
 }
 
 Console.Write("Введите целое пятизначное число: ");
